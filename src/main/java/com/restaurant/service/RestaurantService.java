@@ -38,7 +38,7 @@ public class RestaurantService {
 	    menuItemRepository.save(menuItem);
 	    
 	    // Return a created response with the saved menu item
-	    return ResponseEntity.status(HttpStatus.CREATED).body(menuItem);
+	    return ResponseEntity.status(HttpStatus.CREATED).body(menuItem); 
 	}
 
 	public ResponseEntity<List<MenuItem>> getMenuItems(Category category) {
